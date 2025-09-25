@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  overflow-x: hidden;
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('images/HERO_05.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%; /* ensures content doesn't overflow */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #00a86b;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #007f52;
+}
+
+/* Divider Styles */
+.divider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-shape {
+  display: none; /* hide all by default */
+  position: relative;
+  width: 100%;
+  height: 150px;
+  fill: #d3d3d3; /* light gray color */
+}
+
+/* General Section */
+.product-section {
+  padding: 80px 20px;
+  background: #f9f9f9; /* subtle gray background */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid Container */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* Individual Card */
+.product-card {
+  background: #fff; /* white background */
+  border: 2px solid #e63946; /* red border for accent */
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #222; /* dark text for readability */
+  min-height: 300px;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideFadeIn 0.8s forwards;
+}
+
+/* Stagger animation delays for each card */
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+.product-card:nth-child(5) { animation-delay: 0.5s; }
+.product-card:nth-child(6) { animation-delay: 0.6s; }
+.product-card:nth-child(7) { animation-delay: 0.7s; }
+
+/* Hover Effect */
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(230, 57, 70, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Slide-up + fade-in animation */
+@keyframes slideFadeIn {
+  0% {opacity: 0; transform: translateY(30px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+/* Card Heading */
+.product-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #e63946; /* red heading */
+}
+
+/* Card Description */
+.product-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #333; /* dark gray for paragraph */
+}
+
+/* Button Styling */
+.product-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e63946; /* red button */
+  color: #fff; /* white text */
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  align-self: flex-start;
+}
+
+.product-card .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+  background: #b8323f; /* darker red on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .product-section {
+    padding: 60px 15px;
+  }
+
+  .product-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .product-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-section {
+    padding: 40px 10px;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-card p {
+    font-size: 0.85rem;
+  }
+}

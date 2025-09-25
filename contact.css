@@ -1,0 +1,289 @@
+/* ============ RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('images/HERO__04.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%; /* ensures content doesn't overflow */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #00a86b;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #007f52;
+}
+
+/* Divider Styles */
+.divider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-shape {
+  display: none; /* hide all by default */
+  position: relative;
+  width: 100%;
+  height: 150px;
+  fill: #d3d3d3; /* light gray color */
+}
+
+
+
+
+
+
+
+
+
+/* ?????//////////////////// CONTACT FORM //////////// */
+
+/* Contact Section Styling */
+/* Contact Section */
+#contactSection {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: white;
+}
+
+#contactSection .contact-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Left Contact Info */
+#contactSection .contact-info {
+  background: #b71c1c;
+  color: #fff;
+  padding: 40px;
+  width: 40%;
+}
+
+#contactSection .contact-info h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#contactSection .contact-info p {
+  margin: 18px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+#contactSection .contact-info p i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+/* Right Form with Background Image */
+#contactSection .contact-form {
+  width: 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Image */
+#contactSection .contact-form .form-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/') no-repeat center center/cover;
+  z-index: 1;
+}
+
+/* Form Overlay */
+#contactSection .contact-form .form-overlay {
+  position: relative;
+  z-index: 2;
+  background:white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Headings and text */
+#contactSection .form-overlay h2 {
+  color: #0a0a23;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#contactSection .form-overlay p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Inputs */
+#contactSection .form-overlay input,
+#contactSection .form-overlay textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+#contactSection .form-overlay textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Button */
+#contactSection .form-overlay button {
+  background: #b71c1c;;
+  border: none;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#contactSection .form-overlay button:hover {
+  background: #d92a34;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #contactSection .contact-container {
+    flex-direction: column;
+  }
+  #contactSection .contact-info,
+  #contactSection .contact-form {
+    width: 100%;
+  }
+  #contactSection .form-overlay {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+
+
+/* ///////////////////////// MAP///////////////// */
+/* Google Map Section */
+
+
+.map-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.map-location {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.map-location i {
+  color: #e60023; /* red icon */
+  margin-right: 8px;
+}
+
+.map-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 10px; /* optional styling */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* optional styling */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

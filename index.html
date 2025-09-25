@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Demo Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Loader placeholder -->
+  <div id="loader-placeholder"></div>
+    
+  <!-- Navbar placeholder -->
+  <div id="navbar-placeholder"></div>
+  
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Sunmax Solar Power</h1>
+ <p>Harnessing the power of the sun to deliver reliable, affordable, and sustainable solar energy solutions for homes and businesses.</p>
+
+  <a href="contact.html" class="btn">Contact Us</a>
+  </div>
+
+  <!-- DIVIDER OPTIONS -->
+  <div class="divider">
+    <!-- 🌊 Wave Divider -->
+    <svg class="divider-shape wave" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,100 C150,200 350,0 500,100 L500,150 L0,150 Z"></path>
+    </svg>
+
+    <!-- 📐 Diagonal Divider -->
+    <svg class="divider-shape diagonal" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,100 L500,0 L500,150 L0,150 Z"></path>
+    </svg>
+
+    <!-- 🔵 Curved Divider -->
+    <svg class="divider-shape curve" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,100 C150,200 350,0 500,100 L500,150 L0,150 Z"></path>
+    </svg>
+
+    <!-- ⚡ Zigzag Divider -->
+    <svg class="divider-shape zigzag" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,120 L125,100 L250,140 L375,90 L500,120 L500,150 L0,150 Z"></path>
+    </svg>
+
+    <!-- ⛰️ Hills Divider -->
+    <svg class="divider-shape hills" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,100 C100,50 200,150 300,100 C400,50 500,150 500,150 L0,150 Z"></path>
+    </svg>
+  </div>
+</section>
+
+
+
+
+
+    <!-- About Section -->
+<section style="display:flex; justify-content:space-between; align-items:center; padding:90px 10%; flex-wrap:wrap; background:#fff;">
+
+  <!-- Left Content -->
+  <div style="flex:1; min-width:340px;">
+    <span style="display:inline-block; background:#fdeaea; color:#444; padding:8px 18px; border-radius:22px; font-size:16px; font-weight:600; margin-bottom:20px;">ABOUT US</span>
+    
+    <h2 style="font-size:40px; color:#444; margin-bottom:20px;">Sunmax Solar Power</h2>
+    
+    <p style="font-size:17px; color:#333; line-height:1.7; margin-bottom:25px;">
+      Established in the year 2013 at Pune, Maharashtra, we <b>Sunmax Solar Power</b> are a Sole Proprietorship based firm, engaged as a Wholesale Supplier of Solar Water Heater, Solar Street Light, Solar Rooftop Systems, and more.
+    </p>
+    
+    <p style="font-size:17px; color:#333; line-height:1.7; margin-bottom:25px;">
+      Our products are high in demand due to their premium quality, seamless finish, advanced technology, eco-friendliness, and affordable prices. We provide customized solar solutions to residential, commercial, and industrial clients.
+    </p>
+
+    <p style="font-size:17px; color:#333; line-height:1.7; margin-bottom:25px;">
+      Furthermore, we ensure timely delivery, transparent dealings, and dedicated after-sales support, which has helped us gain a huge and loyal client base in the solar energy market.
+    </p>
+    
+    <div style="display:flex; align-items:center; gap:14px; margin-bottom:25px;">
+      <span style="color:#ff4d4d; font-size:20px;">★</span>
+      <span style="font-weight:600; font-size:17px; color:#b30000;">Trusted Since 2013</span>
+      <span style="color:#777; font-size:16px;">Clients 500+</span>
+    </div>
+    
+    <button style="background:#e60000; color:#fff; border:none; padding:14px 26px; font-size:16px; border-radius:28px; cursor:pointer; transition:0.3s;">
+      → Learn more
+    </button>
+  </div>
+
+  <!-- Right Image + Stats -->
+  <div style="flex:1; min-width:340px; text-align:center; position:relative; margin-top:40px;">
+    <img src="images/About_image.jpg" alt="Sunmax Solar Power" 
+         style="width:100%; max-width:500px; border-radius:14px;">
+
+    <!-- Success Box -->
+    <div style="position:absolute;     top: -35%;right: 0%; background:#fff5f5; padding:20px 24px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:220px;">
+      <h3 style="margin:0; font-size:28px; color:#cc0000;"><span id="successCount"></span>93%</h3>
+      <p style="margin:6px 0 0; font-size:15px; color:#444;">Customer Satisfaction</p>
+      <p style="font-size:13px; color:#555; margin-top:6px;">We deliver quality solar products and services, ensuring maximum satisfaction for our clients.</p>
+    </div>
+
+    <!-- Experience Box -->
+    <div style="position:absolute;     bottom: -27%;left: 0%; background:#fff0f0; padding:20px 24px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:220px;">
+      <h3 style="margin:0; font-size:28px; color:#cc0000;"><span id="expCount"></span>10+</h3>
+      <p style="margin:6px 0 0; font-size:15px; color:#444;">Years of Service</p>
+      <p style="font-size:13px; color:#555; margin-top:6px;">Serving since 2013, providing reliable solar energy solutions across Maharashtra and beyond.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Company Profile -->
+<section class="company-section">
+  <div class="company-container">
+    <div class="company-col left gsap-fade-left">
+      <h2>Company Profile</h2>
+      <p>Introduction – Sunreen is a global solar energy solutions provider with end-to-end capabilities that drive energy savings for clients.</p>
+      <p>We are solar system integrator providing design, installation, net energy metering, monitoring & maintenance Gallery.</p>
+      <p>Integrated all types of solar PV systems i.e. residential, commercial and industrial.</p>
+      <p>Our motive: cost effective projects with excellent payback.</p>
+      <p>With an in-depth variety of solar solutions, each one is customized after recommendations to make the project economically viable & technically feasible.</p>
+      <p>With our strong team & partnerships we offer major value of solutions built for future requirements with optimum budget.</p>
+      <p>Highly skilled & dedicated solar professional team, we ensure quick delivery of affordable solar.</p>
+    </div>
+    <div class="company-col right gsap-fade-right">
+      <div class="highlight-text">Green Energy<br>Clean Energy</div>
+      <div class="info-box">
+        <h3>Solar Introduction & Availability</h3>
+        <p>The Sun is our most abundant source of clean energy.</p>
+        <p>India has vast solar power potential where sunshine is available for long hours per day for most part of the year.</p>
+        <p>As sunlight is free and pure, the solar modules can convert them into clean electricity. The conversion process is pollution-free and renewable.</p>
+        <p>Solar energy is most affordable & reliable source of green energy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT SECTION -->
+<!-- IMPACT SECTION -->
+
+
+<section id="impact">
+  <div class="overlay">
+    <h2>HIGHLIGHTS</h2>
+    <div class="stats">
+<!-- Include FontAwesome CDN in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<!-- Stats Section -->
+<div class="stats">
+
+  <!-- Years of Experience -->
+  <div class="item">
+    <div class="icon"><i class="fas fa-briefcase"></i></div> <!-- Briefcase = Work/Experience -->
+    <p class="label">Years of Experience</p>
+    <h3><span class="counter" data-target="12">10</span>+ Years</h3>
+  </div>
+
+
+  <!-- Projects Completed -->
+  <div class="item">
+    <div class="icon"><i class="fas fa-project-diagram"></i></div> <!-- Project Diagram = Projects -->
+    <p class="label">Projects Completed</p>
+    <h3><span class="counter" data-target="150">100</span>+</h3>
+  </div>
+
+  <!-- Satisfied Clients -->
+  <div class="item">
+    <div class="icon"><i class="fas fa-users"></i></div> <!-- Users = Client Base -->
+    <p class="label">Satisfied Clients</p>
+    <h3><span class="counter" data-target="120">93</span>+</h3>
+  </div>
+
+</div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- Why Solar System -->
+<section class="why-section">
+  <div class="why-container">
+    <div class="why-col gsap-fade-up">
+      <h3>Why Solar System</h3>
+      <ul>
+
+  <li>Solar energy is important for many reasons, including a long project life of more than 25 years, providing reliable and consistent energy generation for decades.</li>
+  <li>Reliable Technology: Solar panels are designed to work efficiently under various weather conditions and require minimal maintenance.</li>
+  <li>System Warranty: Most solar systems come with a warranty of 25 years, ensuring performance and long-term reliability.</li>
+  <li>Government Support: Enjoy subsidies, tax benefits, and depreciation advantages offered by the government, reducing the upfront cost of installation.</li>
+  <li>Environmental Benefits: Solar energy supports a green and clean environment by reducing carbon footprint and dependency on fossil fuels.</li>
+  <li>Cost Savings: Residential, commercial, and industrial users can significantly reduce electricity bills, sometimes up to 90%, depending on system size and consumption.</li>
+  <li>Energy Independence: Solar systems reduce dependence on the grid and provide backup during power outages.</li>
+  <li>Scalable & Flexible: Solar systems can be installed on rooftops, open lands, or industrial spaces, and can be expanded as energy needs grow.</li>
+
+      </ul>
+    </div>
+    <div class="why-col gsap-fade-up">
+      <img src="images/WHY_CHOOSE_US.png" alt="Solar Diagram">
+      <div class="info-box">
+        <h3>On-grid Systems / Grid Tie Systems & Net Metering</h3>
+        <p>Most widely used systems installed across India. These systems are installed in societies, homes, offices, factories, schools, hospitals, hotels, banks and many more.</p>
+        <p>Net Metering: Any excess energy exported to the grid can be adjusted in the bill. This ensures maximum savings and efficiency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="divider-top" style="margin:0; padding:0; width:100%; overflow:hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="display:block; width:100%; height:100px;">
+      <path d="M0,100 C150,0 350,200 500,100 L500,0 L0,0 Z" style="fill:#ffffff;"></path>
+    </svg>
+  </div>
+
+
+<!-- Testimonial Section -->
+<section id="client-testimonials" style="padding:60px 20px; background:white; text-align:center;  font-family: 'Times New Roman', Times, serif;position:relative;">
+  <div class="client-testimonial-container" style="max-width:1100px; margin:auto; position:relative;">
+
+    <!-- Section Title -->
+<h2 style="font-size:32px; font-weight:700; margin-bottom:40px; color:#222; text-transform:none; letter-spacing:1px;">
+  What our clients say
+</h2>
+
+
+    <!-- Swiper -->
+    <div class="swiper client-testimonial-swiper" style="padding:20px;">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide client-testimonial-card" style="background:#f9f9f9,#eaf4ff; padding:25px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition:transform 0.3s; min-height:280px;">
+          <div class="stars" style="color:#FFD700; font-size:22px; margin-bottom:12px;">⭐⭐⭐⭐⭐</div>
+          <h4 class="name" style="font-size:18px; font-weight:600; color:#b22222; margin-bottom:12px;">
+            Rajesh Sharma – Pune
+          </h4>
+          <p style="font-size:15px; color:#555; line-height:1.6;">
+            "Sunmax Solar Power installed a rooftop solar system at my residence. The process was smooth, and the team explained everything clearly. My electricity bills have reduced significantly!"
+          </p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide client-testimonial-card" style="background:#f9f9f9,#eaf4ff; padding:25px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition:transform 0.3s; min-height:280px;">
+          <div class="stars" style="color:#FFD700; font-size:22px; margin-bottom:12px;">⭐⭐⭐⭐⭐</div>
+          <h4 class="name" style="font-size:18px; font-weight:600; color:#b22222; margin-bottom:12px;">
+            Sneha Patil – Industrial Client
+          </h4>
+          <p style="font-size:15px; color:#555; line-height:1.6;">
+            "The solar water heater supplied by Sunmax is of premium quality. Their after-sales support is excellent, and the team is always available for assistance."
+          </p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide client-testimonial-card" style="background:#f9f9f9,#eaf4ff; padding:25px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition:transform 0.3s; min-height:280px;">
+          <div class="stars" style="color:#FFD700; font-size:22px; margin-bottom:12px;">⭐⭐⭐⭐⭐</div>
+          <h4 class="name" style="font-size:18px; font-weight:600; color:#b22222; margin-bottom:12px;">
+            Amit Kulkarni – Commercial Building Owner
+          </h4>
+          <p style="font-size:15px; color:#555; line-height:1.6;">
+            "We opted for Sunmax Solar rooftop solutions for our office. The installation was seamless, and the system is working perfectly. Highly recommended for businesses!"
+          </p>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide client-testimonial-card" style="background:#f9f9f9,#eaf4ff; padding:25px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.1); transition:transform 0.3s; min-height:280px;">
+          <div class="stars" style="color:#FFD700; font-size:22px; margin-bottom:12px;">⭐⭐⭐⭐⭐</div>
+          <h4 class="name" style="font-size:18px; font-weight:600; color:#b22222; margin-bottom:12px;">
+            Deepak Joshi – Housing Society
+          </h4>
+          <p style="font-size:15px; color:#555; line-height:1.6;">
+            "Our society installed solar street lights and water heaters from Sunmax Solar Power. The products are durable and eco-friendly. Great service!"
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination" style="margin-top:20px;"></div>
+
+      <!-- Navigation (outside cards) -->
+      <div class="swiper-button-next" style="color:#006699; position:absolute; top:50%; right:-40px; transform:translateY(-50%);"></div>
+      <div class="swiper-button-prev" style="color:#006699; position:absolute; top:50%; left:-40px; transform:translateY(-50%);"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SwiperJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Inline JS -->
+<script>
+  var swiper = new Swiper(".client-testimonial-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000, // Faster speed
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+
+
+  <!-- Footer -->
+<footer class="footer" style="position: relative; background: #111; color: #fff;">
+  <!-- Top Wave Divider -->
+<div style="position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="display:block; width:100%; height:100px;">
+    <path d="M0,100 C150,0 350,200 500,100 L500,0 L0,0 Z" style="fill:#fff;"></path>
+  </svg>
+</div>
+
+  <div class="footer-container" style="padding-top: 100px;">
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="images/LOGO.jpg" alt="Sunmax Solar Power Logo" class="footer-logo" />
+      <p>Established in 2013, we are a trusted supplier of Solar Water Heaters, Solar Street Lights, and other solar solutions. Delivering quality and innovation for a sustainable future.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p><span style="font-weight:700; display:inline-block; width:80px; text-transform:uppercase;">Address:</span> H.No14, SR No.8/17, New Suvarna Colony, Lane No.1, Karnenagar, Pune-411041, Maharashtra, India</p>
+      <p><span style="font-weight:700; display:inline-block; width:80px; text-transform:uppercase;">Contact:</span> +91 98765 43210</p>
+      <p><span style="font-weight:700; display:inline-block; width:80px; text-transform:uppercase;">Email:</span> info@sunmaxsolar.com</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom" style="margin-top:20px; text-align:center;">
+    <p>© 2025 Sunmax Solar Power. All Rights Reserved.</p>
+    <p>Developed By DW INNOVATION PVT. LTD.</p>
+  </div>
+</footer>
+
+
+
+
+  <!-- Load navbar and then navbar.js -->
+
+
+
+ <script>
+    // 1️⃣ Load loader.html
+    fetch("loader.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("loader-placeholder").innerHTML = data;
+      });
+
+    // 2️⃣ Load navbar.html and navbar.js
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+        const script = document.createElement('script');
+        script.src = "navbar.js";
+        document.body.appendChild(script);
+      });
+
+    // 3️⃣ Remove loader after page fully loads
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const loader = document.getElementById("loader");
+        if(loader){
+          loader.style.transition = "all 1.5s ease";
+          loader.style.transform = "translateY(-100%)";
+          loader.style.opacity = "0";
+          setTimeout(() => loader.style.display = "none", 1200);
+        }
+      }, 3500); // same delay as your loader animation
+    });
+  </script>
+
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+</body>
+</html>
