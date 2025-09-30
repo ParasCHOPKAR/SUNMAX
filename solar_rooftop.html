@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Demo Website</title>
+  <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    
+  <!-- Navbar placeholder -->
+  <div id="navbar-placeholder"></div>
+
+
+
+<!-- Solar Panel Product Section with Inline CSS -->
+<div style="display: flex; flex-wrap: wrap; background: #fff; padding: 20px; border-radius: 12px; max-width: 1400px; margin: auto; box-shadow: 0 0 15px rgba(0,0,0,0.15); font-family: Arial, sans-serif; gap: 20px;">
+
+  <!-- Image Section -->
+  <div style="flex: 1; min-width: 300px; position: relative;">
+    <!-- Main Image -->
+    <img id="mainSolarImage" src="images/Solar_Rooftop_01.jpg" alt="Solar Panel" 
+         style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;" />
+
+    <!-- Thumbnail Gallery -->
+    <div style="display: flex; gap: 10px; margin-top: 15px;">
+      <img src="images/Solar_Rooftop_01.jpg" alt="Thumbnail 1" 
+           style="width: 120px; height: 80px; object-fit: cover; cursor: pointer; opacity: 1; border-radius: 6px; border: 2px solid #c58ca3;" 
+           onclick="changeSolarImage(this)" class="solar-thumb active">
+      <img src="images/Solar_Rooftop_02.jpg" alt="Thumbnail 2" 
+           style="width: 120px; height: 80px; object-fit: cover; cursor: pointer; opacity: 0.6; border-radius: 6px;" 
+           onclick="changeSolarImage(this)" class="solar-thumb">
+      <img src="images/Solar_Rooftop_03.jpg" alt="Thumbnail 3" 
+           style="width: 120px; height: 80px; object-fit: cover; cursor: pointer; opacity: 0.6; border-radius: 6px;" 
+           onclick="changeSolarImage(this)" class="solar-thumb">
+    </div>
+  </div>
+
+<!-- Details Section for Solar Rooftop System -->
+<!-- Details Section for Solar Rooftop System -->
+<div style="flex: 1.2; padding: 0 30px; min-width: 300px;">
+  <!-- Subtitle -->
+  <p style="color: #b71c1c; font-size: 14px; font-weight: bold; margin: 0;">Solar Rooftop Solutions</p>
+
+  <!-- Product Title -->
+  <h1 id="solarTitle" style="font-size: 32px; margin: 10px 0; color: #333;">Premium Solar Rooftop System</h1>
+
+  <!-- Short Description -->
+  <p style="font-size: 16px; line-height: 28px; color: #555; margin-bottom: 20px;">
+    Offering you a complete choice of products which include Solar Grid-Tied Systems for residential, commercial and industrial rooftops.  
+    These systems provide reliable energy generation, reduce electricity bills and are designed for seamless integration with existing electrical infrastructure.
+  </p>
+
+  <!-- Key Specifications -->
+  <div style="background: #f5f5f5; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
+    <h3 style="font-size: 18px; margin-bottom: 10px; color: #333;">Key Specifications</h3>
+    <ul style="font-size: 15px; line-height: 26px; padding-left: 20px; margin: 0;">
+      <li>System Type: Grid-tied rooftop system</li>
+      <li>Capacity: 1 kW to 10 kW (customizable)</li>
+      <li>Solar Panels: Monocrystalline / Polycrystalline</li>
+      <li>Inverter: String or Central inverter (depending on model)</li>
+      <li>Mounting Structure: Corrosion-resistant aluminum / stainless steel</li>
+      <li>Warranty: 5–25 years (panels & inverters)</li>
+      <li>Operating Voltage: 230V / 400V (3-phase for commercial)</li>
+    </ul>
+  </div>
+
+  <!-- Benefits -->
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 18px; margin-bottom: 10px; color: #333;">Benefits</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <span style="background:#b71c1c; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 14px;">Reduces electricity bills</span>
+      <span style="background: #b71c1c; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 14px;">Eco-friendly energy</span>
+      <span style="background: #b71c1c; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 14px;">High energy reliability</span>
+      <span style="background: #b71c1c; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 14px;">Customizable capacity</span>
+      <span style="background: #b71c1c; color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 14px;">Low maintenance</span>
+    </div>
+  </div>
+
+  <!-- Applications -->
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 18px; margin-bottom: 10px; color: #333;">Applications</h3>
+    <ul style="font-size: 15px; line-height: 26px; padding-left: 20px; margin: 0;">
+      <li>Residential rooftops</li>
+      <li>Commercial buildings</li>
+      <li>Factories and industrial units</li>
+      <li>Educational institutions</li>
+      <li>Community and government projects</li>
+    </ul>
+  </div>
+
+  <!-- Enquire Now Button -->
+  <a href="#" onclick="redirectToSolarContact()" 
+     style="display: inline-block; margin-top: 10px; padding: 14px 28px; background-color:#b71c1c; color: #fff; font-size: 16px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+    Enquire Now
+  </a>
+</div>
+
+
+</div>
+
+<script>
+  // Redirect function for "Enquire Now"
+  function redirectToSolarContact() {
+    const productTitle = document.getElementById('solarTitle').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+
+  // Function to change main solar image on thumbnail click
+  function changeSolarImage(element) {
+    const mainImg = document.getElementById('mainSolarImage');
+    mainImg.src = element.src;
+
+    // Reset all thumbnails
+    const thumbs = document.querySelectorAll('.solar-thumb');
+    thumbs.forEach(t => {
+      t.style.opacity = '0.6';
+      t.style.border = 'none';
+    });
+
+    // Highlight selected thumbnail
+    element.style.opacity = '1';
+    element.style.border = '2px solid #c58ca3';
+  }
+</script>
+
+
+<!-- ///////////////////// WhatsApp ////////////////////// -->
+
+
+<section id="contact-buttons">
+  <!-- WhatsApp & Phone Buttons -->
+  <div style="position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 12px; z-index: 1100;">
+
+    <!-- Phone Button -->
+    <a href="tel:+917263948865" 
+       style="width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); background: #0d4a55; transition: transform 0.2s ease-in-out;">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+917263948865" target="_blank"
+       style="width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); background: #25D366; transition: transform 0.2s ease-in-out;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+  </div>
+</section>
+
+
+  <script src="contact.js"></script>
+  <!-- Footer --><footer class="footer" style="position: relative; background: #111; color: #fff; font-family: 'Poppins', sans-serif; font-size:16px;">
+  <!-- Top Wave Divider -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="display:block; width:100%; height:100px;">
+      <path d="M0,100 C150,0 350,200 500,100 L500,0 L0,0 Z" style="fill:#fff;"></path>
+    </svg>
+  </div>
+
+  <!-- Grid Layout -->
+  <div class="footer-container" style="
+        padding-top: 100px; 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+        gap: 40px;
+        align-items: flex-start;
+        text-align: left;
+        color:#fff;  /* make all text white */
+        font-size:16px; /* base font size */
+      ">
+    
+    <!-- Company Info -->
+    <div class="footer-col">
+      <img src="images/LOGO.jpg" alt="Sunmax Solar Power Logo" style="max-width:160px; margin-bottom:15px;" />
+      <p style="line-height:1.7; font-size:16px; color:#fff;">
+        Established in 2013, we are a trusted supplier of solar water heaters, solar street lights and other solar solutions, delivering quality and innovation for a sustainable future.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4 style="margin-bottom:15px; color:#fff; font-size:18px;">Quick Links</h4>
+      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
+        <li><a href="index.html" style="color:#fff; text-decoration:none; font-size:16px;">Home</a></li>
+        <li><a href="about.html" style="color:#fff; text-decoration:none; font-size:16px;">About Us</a></li>
+        <li><a href="product.html" style="color:#fff; text-decoration:none; font-size:16px;">Products</a></li>
+        <li><a href="gallery.html" style="color:#fff; text-decoration:none; font-size:16px;">Gallery</a></li>
+        <li><a href="contact.html" style="color:#fff; text-decoration:none; font-size:16px;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4 style="margin-bottom:15px; color:#fff; font-size:18px;">Contact Us</h4>
+
+      <!-- Address -->
+      <p style="margin:10px 0; font-size:16px; display:flex; align-items:center; color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             fill="white" viewBox="0 0 24 24" style="margin-right:10px;">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 
+                   0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Plot No. 14, Suvarna Colony, Karvenagar, Pune - 411052
+      </p>
+
+      <!-- Phone -->
+      <p style="margin:10px 0; font-size:16px; display:flex; align-items:center; color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             fill="white" viewBox="0 0 24 24" style="margin-right:10px;">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 
+                   1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 
+                   1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 
+                   3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 
+                   1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        +91 7263948865
+      </p>
+
+      <!-- Email -->
+      <p style="margin:10px 0; font-size:16px; display:flex; align-items:center; color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             fill="white" viewBox="0 0 24 24" style="margin-right:10px;">
+          <path d="M20 4H4c-1.1 0-2 .9-2 
+                   2v12c0 1.1.9 2 2 
+                   2h16c1.1 0 2-.9 
+                   2-2V6c0-1.1-.9-2-2-2zm0 
+                   4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        sunmaxsolar2018@gmail.com
+      </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-col">
+      <h4 style="margin-bottom:15px; color:#fff; font-size:18px;">Follow Us</h4>
+      <div style="display:flex; gap:15px;">
+        <a href="https://www.facebook.com/share/1BA3SUThJk/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" style="width:26px;"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom" style="margin-top:40px; text-align:center; border-top:1px solid rgba(255,255,255,0.2); padding:15px 0; font-size:15px; color:#fff;">
+    <p style="margin:5px 0;">© 2025 Sunmax Solar Power. All Rights Reserved.</p>
+    <p style="margin:5px 0;">Developed by DW Innovation Pvt. Ltd.</p>
+  </div>
+</footer>
+
+
+
+  <!-- Load navbar and then navbar.js -->
+
+
+
+
+
+
+ <script>
+    // 1️⃣ Load loader.html
+    fetch("loader.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("loader-placeholder").innerHTML = data;
+      });
+
+    // 2️⃣ Load navbar.html and navbar.js
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+        const script = document.createElement('script');
+        script.src = "navbar.js";
+        document.body.appendChild(script);
+      });
+
+    // 3️⃣ Remove loader after page fully loads
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const loader = document.getElementById("loader");
+        if(loader){
+          loader.style.transition = "all 1.5s ease";
+          loader.style.transform = "translateY(-100%)";
+          loader.style.opacity = "0";
+          setTimeout(() => loader.style.display = "none", 1200);
+        }
+      }, 3500); // same delay as your loader animation
+    });
+  </script>
+
+
+</body>
+</html>

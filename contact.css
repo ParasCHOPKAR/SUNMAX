@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', sans-serif;
   background: #fff;
   color: #111;
   line-height: 1.6;
@@ -98,12 +98,14 @@ body {
 
 /* Contact Section Styling */
 /* Contact Section */
+
 #contactSection {
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
+
   background: white;
 }
 
@@ -120,14 +122,18 @@ body {
 #contactSection .contact-info {
   background: #b71c1c;
   color: #fff;
-  padding: 40px;
+  padding: 40px 60px;   /* reduced top padding */
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* aligns content vertically */
 }
 
+
 #contactSection .contact-info h2 {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #contactSection .contact-info p {

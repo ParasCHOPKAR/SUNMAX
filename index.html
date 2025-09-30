@@ -19,9 +19,9 @@
 <section class="hero">
   <div class="hero-content">
     <h1>Welcome to Sunmax Solar Power</h1>
- <p>Harnessing the power of the sun to deliver reliable, affordable, and sustainable solar energy solutions for homes and businesses.</p>
+ <p>Harnessing the power of the sun to deliver reliable, affordable and sustainable solar energy solutions for homes and businesses.</p>
 
-  <a href="contact.html" class="btn">Contact Us</a>
+
   </div>
 
   <!-- DIVIDER OPTIONS -->
@@ -56,59 +56,445 @@
 
 
 
-
-    <!-- About Section -->
-<section style="display:flex; justify-content:space-between; align-items:center; padding:90px 10%; flex-wrap:wrap; background:#fff;">
+<!-- About Section -->
+<section class="about-section">
 
   <!-- Left Content -->
-  <div style="flex:1; min-width:340px;">
-    <span style="display:inline-block; background:#fdeaea; color:#444; padding:8px 18px; border-radius:22px; font-size:16px; font-weight:600; margin-bottom:20px;">ABOUT US</span>
+  <div class="about-left">
+    <span class="about-tag">About Us</span>
     
-    <h2 style="font-size:40px; color:#444; margin-bottom:20px;">Sunmax Solar Power</h2>
+    <h2 class="about-title">Sunmax Solar Power</h2>
     
-    <p style="font-size:17px; color:#333; line-height:1.7; margin-bottom:25px;">
-      Established in the year 2013 at Pune, Maharashtra, we <b>Sunmax Solar Power</b> are a Sole Proprietorship based firm, engaged as a Wholesale Supplier of Solar Water Heater, Solar Street Light, Solar Rooftop Systems, and more.
+    <p class="about-text">
+      Established in the year 2013 at Pune, Maharashtra, we <b>Sunmax Solar Power</b> are a Sole Proprietorship based firm, engaged as a Wholesale Supplier of Solar Water Heater, Solar Street Light, Solar Rooftop Systems and more.
     </p>
     
-    <p style="font-size:17px; color:#333; line-height:1.7; margin-bottom:25px;">
-      Our products are high in demand due to their premium quality, seamless finish, advanced technology, eco-friendliness, and affordable prices. We provide customized solar solutions to residential, commercial, and industrial clients.
+    <p class="about-text">
+      Our products are high in demand due to their premium quality, seamless finish, advanced technology, eco-friendliness and affordable prices. We provide customized solar solutions to residential, commercial and industrial clients.
     </p>
 
-    <p style="font-size:17px; color:#333; line-height:1.7; margin-bottom:25px;">
-      Furthermore, we ensure timely delivery, transparent dealings, and dedicated after-sales support, which has helped us gain a huge and loyal client base in the solar energy market.
+    <p class="about-text">
+      Furthermore, we ensure timely delivery, transparent dealings and dedicated after-sales support, which has helped us gain a huge and loyal client base in the solar energy market.
     </p>
     
-    <div style="display:flex; align-items:center; gap:14px; margin-bottom:25px;">
-      <span style="color:#ff4d4d; font-size:20px;">★</span>
-      <span style="font-weight:600; font-size:17px; color:#b30000;">Trusted Since 2013</span>
-      <span style="color:#777; font-size:16px;">Clients 500+</span>
+    <div class="about-highlight">
+      <span class="highlight-icon">★</span>
+      <span class="highlight-text">Trusted Since 2013</span>
     </div>
-    
-    <button style="background:#e60000; color:#fff; border:none; padding:14px 26px; font-size:16px; border-radius:28px; cursor:pointer; transition:0.3s;">
-      → Learn more
-    </button>
+
+    <a href="about.html" class="about-btn-link">
+      <button class="about-btn">→ Learn more</button>
+    </a>
   </div>
 
   <!-- Right Image + Stats -->
-  <div style="flex:1; min-width:340px; text-align:center; position:relative; margin-top:40px;">
-    <img src="images/About_image.jpg" alt="Sunmax Solar Power" 
-         style="width:100%; max-width:500px; border-radius:14px;">
+  <div class="about-right">
+    <img src="images/About_image.jpg" alt="Sunmax Solar Power" class="about-image">
 
     <!-- Success Box -->
-    <div style="position:absolute;     top: -35%;right: 0%; background:#fff5f5; padding:20px 24px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:220px;">
-      <h3 style="margin:0; font-size:28px; color:#cc0000;"><span id="successCount"></span>93%</h3>
-      <p style="margin:6px 0 0; font-size:15px; color:#444;">Customer Satisfaction</p>
-      <p style="font-size:13px; color:#555; margin-top:6px;">We deliver quality solar products and services, ensuring maximum satisfaction for our clients.</p>
+    <div class="about-box success-box">
+      <h3><span id="successCount"></span>93%</h3>
+      <p class="box-title">Customer Satisfaction</p>
+      <p class="box-desc">We deliver quality solar products and services, ensuring maximum satisfaction for our clients.</p>
     </div>
 
     <!-- Experience Box -->
-    <div style="position:absolute;     bottom: -27%;left: 0%; background:#fff0f0; padding:20px 24px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); max-width:220px;">
-      <h3 style="margin:0; font-size:28px; color:#cc0000;"><span id="expCount"></span>10+</h3>
-      <p style="margin:6px 0 0; font-size:15px; color:#444;">Years of Service</p>
-      <p style="font-size:13px; color:#555; margin-top:6px;">Serving since 2013, providing reliable solar energy solutions across Maharashtra and beyond.</p>
+    <div class="about-box exp-box">
+      <h3><span id="expCount"></span>10+</h3>
+      <p class="box-title">Years of Service</p>
+      <p class="box-desc">Serving since 2013, providing reliable solar energy solutions across Maharashtra and beyond.</p>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+<!-- PM Surya Ghar: Muft Bijli Yojana Section -->
+<!-- PM Surya Ghar: Muft Bijli Yojana Section -->
+<section id="pm-yojana" 
+         style="position:relative; padding:80px 20px; font-family:'Poppins',sans-serif; 
+                background:url('images/MODIJI.jpg') center/cover fixed no-repeat;">
+  
+  <!-- Overlay to darken background for readability -->
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,0.65); z-index:0;"></div>
+
+  <!-- Content Wrapper (Full Width Now) -->
+  <div style="position:relative; z-index:1; max-width:1000px; margin:auto; 
+              display:flex; flex-direction:column; gap:25px; color:#fff;">
+
+    <!-- Small Tagline -->
+    <p style="color:#ffdede; font-weight:600; font-size:1rem; margin-bottom:5px; text-transform:uppercase;">
+      Government Solar Scheme by Sunmax Solar Power
+    </p>
+
+    <!-- Title -->
+    <h2 style="font-size:2.8rem; font-weight:700; line-height:1.3; color:#fff; text-shadow:2px 2px 8px rgba(0,0,0,0.7);">
+      PM Surya Ghar: <span style="color:#ffdede;">Muft Bijli Yojana</span>
+    </h2>
+
+    <!-- Description -->
+    <p style="color:#f9f9f9; font-size:1.05rem; line-height:1.9; max-width:900px; text-shadow:1px 1px 6px rgba(0,0,0,0.6);">
+      Approved on <b>29th February 2024</b>, the <b>PM Surya Ghar: Muft Bijli Yojana</b> aims to increase rooftop solar capacity and empower households to generate their own electricity. 
+      With an outlay of <b>₹75,021 crore</b>, the scheme will run till FY 2026-27, implemented by <b>National Programme Implementation Agency (NPIA)</b> and <b>State Implementation Agencies (SIAs)</b>.  
+      <br><br>
+      <b>Sunmax Solar Power</b> is proudly providing services under this scheme to help households adopt clean energy solutions.
+    </p>
+
+    <!-- Eligibility -->
+    <h3 style="font-size:1.7rem; color:#ffdede; margin-top:20px; text-shadow:1px 1px 5px rgba(0,0,0,0.6);">
+      Eligibility Criteria
+    </h3>
+    <ul style="list-style:none; padding:0; margin:0 0 20px; font-size:1.05rem; line-height:1.9;">
+      <li>✔️ Must be an <b>Indian citizen</b>.</li>
+      <li>✔️ Must own a house with a suitable rooftop for solar panels.</li>
+      <li>✔️ Must have a valid electricity connection.</li>
+      <li>✔️ Must not have availed of any other solar subsidy.</li>
+    </ul>
+
+ 
+    <!-- CTA Button -->
+ <a href="yojna.html" 
+   style="align-self:flex-start; padding:14px 32px; background:#ffdede; color:#800020; 
+          text-decoration:none; font-weight:600; font-size:1.1rem; border-radius:25px; 
+          transition:0.3s; box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+  Read More →
+</a>
+
+  </div>
+</section>
+
+<section style="padding:80px 20px; background:white; font-family:'Poppins', sans-serif;">
+  <h2 style="text-align:center; margin-bottom:40px; font-size:2.5rem; color:#444; font-weight:600;">Our Products</h2>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; max-width:1200px; margin:0 auto;">
+
+    <!-- Product Card 1 -->
+    <div style="position:relative; background:#fff; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); overflow:hidden; cursor:pointer; display:flex; flex-direction:column; transition: transform 0.3s, box-shadow 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.15)'; this.querySelector('.info').style.transform='translateY(0)'; this.querySelector('.info').style.opacity='1'; this.querySelector('h3').style.opacity='0';"
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)'; this.querySelector('.info').style.transform='translateY(100%)'; this.querySelector('.info').style.opacity='0'; this.querySelector('h3').style.opacity='1';">
+      <img src="images/Solar_Panel_01.jpg" alt="Solar Panel" style="width:100%; height:200px; object-fit:cover; display:block;">
+      <h3 style="font-size:1.1rem; margin:15px 20px 8px 20px; color:#333; text-align:center; z-index:2; transition: opacity 0.3s ease;">Solar Panel</h3>
+      <div class="info" style="position:absolute; bottom:0; left:0; width:100%; background:rgba(255,255,255,0.95); padding:25px 20px 15px 20px; box-sizing:border-box; transform:translateY(100%); opacity:0; transition:transform 0.4s ease, opacity 0.4s ease; text-align:center;">
+        <p style="font-size:0.95rem; color:#555; margin:8px 0 12px; line-height:1.5;">High-efficiency solar panels for homes and industries, ensuring long-lasting performance and energy savings.</p>
+        <a href="solar_panel.html" style="display:inline-block; text-decoration:none; background:#e63946; color:#fff; padding:10px 24px; border-radius:25px; font-weight:500; font-size:0.95rem; transition: background 0.3s, transform 0.3s; margin-top:5px;">Read More</a>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div style="position:relative; background:#fff; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); overflow:hidden; cursor:pointer; display:flex; flex-direction:column; transition: transform 0.3s, box-shadow 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.15)'; this.querySelector('.info').style.transform='translateY(0)'; this.querySelector('.info').style.opacity='1'; this.querySelector('h3').style.opacity='0';"
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)'; this.querySelector('.info').style.transform='translateY(100%)'; this.querySelector('.info').style.opacity='0'; this.querySelector('h3').style.opacity='1';">
+      <img src="images/Solar_Rooftop_01.jpg" alt="Solar Rooftop System" style="width:100%; height:200px; object-fit:cover; display:block;">
+      <h3 style="font-size:1.1rem; margin:15px 20px 8px 20px; color:#333; text-align:center; z-index:2; transition: opacity 0.3s ease;">Solar Rooftop System</h3>
+      <div class="info" style="position:absolute; bottom:0; left:0; width:100%; background:rgba(255,255,255,0.95); padding:25px 20px 15px 20px; box-sizing:border-box; transform:translateY(100%); opacity:0; transition:transform 0.4s ease, opacity 0.4s ease; text-align:center;">
+        <p style="font-size:0.95rem; color:#555; margin:8px 0 12px; line-height:1.5;">Custom-designed rooftop solar systems to maximize energy generation and reduce electricity bills effectively.</p>
+        <a href="solar_rooftop.html" style="display:inline-block; text-decoration:none; background:#e63946; color:#fff; padding:10px 24px; border-radius:25px; font-weight:500; font-size:0.95rem; transition: background 0.3s, transform 0.3s; margin-top:5px;">Read More</a>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div style="position:relative; background:#fff; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); overflow:hidden; cursor:pointer; display:flex; flex-direction:column; transition: transform 0.3s, box-shadow 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.15)'; this.querySelector('.info').style.transform='translateY(0)'; this.querySelector('.info').style.opacity='1'; this.querySelector('h3').style.opacity='0';"
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)'; this.querySelector('.info').style.transform='translateY(100%)'; this.querySelector('.info').style.opacity='0'; this.querySelector('h3').style.opacity='1';">
+      <img src="images/Solar_power_01.jpg" alt="Solar Power System" style="width:100%; height:200px; object-fit:cover; display:block;">
+      <h3 style="font-size:1.1rem; margin:15px 20px 8px 20px; color:#333; text-align:center; z-index:2; transition: opacity 0.3s ease;">Solar Power System</h3>
+      <div class="info" style="position:absolute; bottom:0; left:0; width:100%; background:rgba(255,255,255,0.95); padding:25px 20px 15px 20px; box-sizing:border-box; transform:translateY(100%); opacity:0; transition:transform 0.4s ease, opacity 0.4s ease; text-align:center;">
+        <p style="font-size:0.95rem; color:#555; margin:8px 0 12px; line-height:1.5;">Complete solar power solutions for residential and commercial spaces with reliable performance and efficiency.</p>
+        <a href="solar_power.html" style="display:inline-block; text-decoration:none; background:#e63946; color:#fff; padding:10px 24px; border-radius:25px; font-weight:500; font-size:0.95rem; transition: background 0.3s, transform 0.3s; margin-top:5px;">Read More</a>
+      </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div style="position:relative; background:#fff; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); overflow:hidden; cursor:pointer; display:flex; flex-direction:column; transition: transform 0.3s, box-shadow 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.15)'; this.querySelector('.info').style.transform='translateY(0)'; this.querySelector('.info').style.opacity='1'; this.querySelector('h3').style.opacity='0';"
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)'; this.querySelector('.info').style.transform='translateY(100%)'; this.querySelector('.info').style.opacity='0'; this.querySelector('h3').style.opacity='1';">
+      <img src="images/Solar-Water-Heater.jpg" alt="Solar Water Heater" style="width:100%; height:200px; object-fit:cover; display:block;">
+      <h3 style="font-size:1.1rem; margin:15px 20px 8px 20px; color:#333; text-align:center; z-index:2; transition: opacity 0.3s ease;">Solar Water Heater</h3>
+      <div class="info" style="position:absolute; bottom:0; left:0; width:100%; background:rgba(255,255,255,0.95); padding:25px 20px 15px 20px; box-sizing:border-box; transform:translateY(100%); opacity:0; transition:transform 0.4s ease, opacity 0.4s ease; text-align:center;">
+        <p style="font-size:0.95rem; color:#555; margin:8px 0 12px; line-height:1.5;">High-quality solar water heaters for homes and industries, reducing electricity bills and supporting sustainable energy.</p>
+        <a href="solare_water_heater.html" style="display:inline-block; text-decoration:none; background:#e63946; color:#fff; padding:10px 24px; border-radius:25px; font-weight:500; font-size:0.95rem; transition: background 0.3s, transform 0.3s; margin-top:5px;">Read More</a>
+      </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div style="position:relative; background:#fff; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.08); overflow:hidden; cursor:pointer; display:flex; flex-direction:column; transition: transform 0.3s, box-shadow 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.15)'; this.querySelector('.info').style.transform='translateY(0)'; this.querySelector('.info').style.opacity='1'; this.querySelector('h3').style.opacity='0';"
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)'; this.querySelector('.info').style.transform='translateY(100%)'; this.querySelector('.info').style.opacity='0'; this.querySelector('h3').style.opacity='1';">
+      <img src="images/domestic-solar-system-repairing-service.jpg" alt="Solar System Repair & Maintenance" style="width:100%; height:200px; object-fit:cover; display:block;">
+      <h3 style="font-size:1.1rem; margin:15px 20px 8px 20px; color:#333; text-align:center; z-index:2; transition: opacity 0.3s ease;">Solar System Repair & Maintenance</h3>
+      <div class="info" style="position:absolute; bottom:0; left:0; width:100%; background:rgba(255,255,255,0.95); padding:25px 20px 15px 20px; box-sizing:border-box; transform:translateY(100%); opacity:0; transition:transform 0.4s ease, opacity 0.4s ease; text-align:center;">
+        <p style="font-size:0.95rem; color:#555; margin:8px 0 12px; line-height:1.5;">We provide professional repair and maintenance services for all solar power systems, ensuring efficiency and longevity.</p>
+        <a href="solar_system_repair.html" style="display:inline-block; text-decoration:none; background:#e63946; color:#fff; padding:10px 24px; border-radius:25px; font-weight:500; font-size:0.95rem; transition: background 0.3s, transform 0.3s; margin-top:5px;">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- //////////////////////////////// OUR CLIENT////////////////////////////// -->
+<!-- Include GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<section style="padding: 100px 20px;   font-family:'Poppins',sans-serif;  position: relative; overflow: hidden;
+background: white, url('https://www.transparenttextures.com/patterns/cubes.png');
+background-size: cover; background-attachment: fixed; color:#333;">
+
+  <!-- Heading Centered -->
+  <div style="text-align:center; margin-bottom: 60px;">
+<h2 style="font-family:'Poppins',sans-serif; 
+           font-size:2.5rem; 
+           font-weight:bold; 
+           color:#444; 
+           position:relative; 
+           display:inline-block; 
+           letter-spacing:1px;">
+  Our Business Partners
+</h2>
+
+  </div>
+
+  <!-- Slider Full Width -->
+  <div style="max-width: 1400px; margin:auto; overflow:hidden; position:relative;">
+    <div class="clients-slider">
+         <img src="Clients/adani.png" alt="Client 1">
+              <img src="Clients/ECE.png" alt="Client 15">
+      <img src="Clients/enviro.webp" alt="Client 2">
+      <img src="Clients/Fronius-logo.png" alt="Client 3">
+      <img src="Clients/goldi_solar.png" alt="Client 4">
+      <img src="Clients/havells.png" alt="Client 7">
+      <img src="Clients/HPL.webp" alt="Client 10">
+      <img src="Clients/jinko.png"alt="Client 11">
+      <img src="Clients/L&T.jpg" alt="Client 12">
+      <img src="Clients/Livfast.png" alt="Client 13">
+      <img src="Clients/Loom.png" alt="Client 14">
+      <img src="Clients/Luminous.png" alt="Client 16">
+      <img src="Clients/macwin.png" alt="Client 15">
+      <img src="Clients/polycab.png" alt="Client 15">
+      <!-- <img src="Client_Logo/DANA_LOGO.png" alt="Client 12"> -->
+        <img src="Clients/navitas.png" alt="Client 13">
+      <img src="Clients/premier_Energies.png" alt="Client 13">
+      <img src="Clients/racold.png" alt="Client 14">
+      <img src="Clients/rayzon.png" alt="Client 14">
+      <img src="Clients/renew_power.png" alt="Client 15">
+      <img src="Clients/Secure.webp" alt="Client 15">
+      <img src="Clients/SMA_SOLAR.png" alt="Client 15">
+      <img src="Clients/solar_edge.png" alt="Client 15">
+      <img src="Clients/SOLAX-LOGO.png" alt="Client 12">
+      <img src="Clients/Solis-Logo.png" alt="Client 13">
+      <img src="Clients/Sungrow_Clear.avif" alt="Client 14">
+      <img src="Clients/Supreme.png" alt="Client 14">
+      <!-- <img src="Client_Logo/INDUS_BIO.png" alt="Client 15"> -->
+      <img src="Clients/TATA_power.jpeg" alt="Client 15">
+      <img src="Clients/true_power_earthings_logo.jpg" alt="Client 13">
+      <img src="Clients/V-guard.png" alt="Client 14">
+      <!-- <img src="Client_Logo/Enzene_Biosciences_Logo.jpg" alt="Client 14"> -->
+      <img src="Clients/vikramsolar.png" alt="Client 15">
+      <img src="Clients/WAAREE.webp" alt="Client 15">
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div style="text-align:center; margin-top:40px;">
+    <button id="viewAllBtn" style="padding:14px 32px; font-size:1.2rem; font-family:'Poppins',sans-serif;  border:none; border-radius:25px;
+      background-color:#b71c1c;  color:white; font-weight:600; cursor:pointer;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:0.3s;">
+      View All Partners
+    </button>
+  </div>
+
+  <!-- Hidden Grid Popup -->
+  <div id="clientsPopup" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8); z-index:9999; overflow-y:auto; padding:60px 20px;">
+    <div style="max-width:1200px; margin:auto; background:white; border-radius:12px; padding:40px; position:relative;">
+<button id="closePopup" style="position:absolute; font-size:18px; font-family:'Times New Roman', Times, serif; top:20px; right:20px; background:#b71c1c; border:none; color:white; padding:10px 18px; border-radius:6px; font-weight:bold; cursor:pointer;">
+  Close ✕
+</button>
+
+<style>
+  @media (max-width: 600px) {
+    #closePopup {
+      font-size:14px !important;  /* smaller font */
+      padding:6px 12px !important; /* smaller padding */
+      top:15px !important;         /* adjust top position */
+      right:15px !important;       /* adjust right position */
+    }
+  }
+</style>
+
+      
+      <h3 style="text-align:center;font-family:'Poppins',sans-serif; font-size:2rem; font-weight:700; margin-bottom:30px; color:#444 ;">All Partners</h3>
+      
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:20px;">
+         <img src="Clients/adani.png" alt="Client 1">
+              <img src="Clients/ECE.png" alt="Client 15">
+      <img src="Clients/enviro.webp" alt="Client 2">
+      <img src="Clients/Fronius-logo.png" alt="Client 3">
+      <img src="Clients/goldi_solar.png" alt="Client 4">
+      <img src="Clients/havells.png" alt="Client 7">
+      <img src="Clients/HPL.webp" alt="Client 10">
+      <img src="Clients/jinko.png"alt="Client 11">
+      <img src="Clients/L&T.jpg" alt="Client 12">
+      <img src="Clients/Livfast.png" alt="Client 13">
+      <img src="Clients/Loom.png" alt="Client 14">
+      <img src="Clients/Luminous.png" alt="Client 16">
+      <img src="Clients/macwin.png" alt="Client 15">
+      <img src="Clients/polycab.png" alt="Client 15">
+      <!-- <img src="Client_Logo/DANA_LOGO.png" alt="Client 12"> -->
+        <img src="Clients/navitas.png" alt="Client 13">
+      <img src="Clients/premier_Energies.png" alt="Client 13">
+      <img src="Clients/racold.png" alt="Client 14">
+      <img src="Clients/rayzon.png" alt="Client 14">
+      <img src="Clients/renew_power.png" alt="Client 15">
+      <img src="Clients/Secure.webp" alt="Client 15">
+      <img src="Clients/SMA_SOLAR.png" alt="Client 15">
+      <img src="Clients/solar_edge.png" alt="Client 15">
+      <img src="Clients/SOLAX-LOGO.png" alt="Client 12">
+      <img src="Clients/Solis-Logo.png" alt="Client 13">
+      <img src="Clients/Sungrow_Clear.avif" alt="Client 14">
+      <img src="Clients/Supreme.png" alt="Client 14">
+      <!-- <img src="Client_Logo/INDUS_BIO.png" alt="Client 15"> -->
+      <img src="Clients/TATA_power.jpeg" alt="Client 15">
+      <img src="Clients/true_power_earthings_logo.jpg" alt="Client 13">
+      <img src="Clients/V-guard.png" alt="Client 14">
+      <!-- <img src="Client_Logo/Enzene_Biosciences_Logo.jpg" alt="Client 14"> -->
+      <img src="Clients/vikramsolar.png" alt="Client 15">
+      <img src="Clients/WAAREE.webp" alt="Client 15">
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<style>
+  .clients-slider {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+  }
+
+  .clients-slider img {
+    max-height: 150px;
+    object-fit: contain;
+    background: rgba(0,0,0,0.03);
+    padding: 16px 28px;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.45s ease;
+    filter: brightness(1);
+  }
+
+  .clients-slider img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 25px rgba(0,188,212,0.3), 0 0 40px rgba(255,123,0,0.25);
+    filter: brightness(1.05);
+  }
+
+  #clientsPopup img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: transform 0.3s;
+  }
+
+  #clientsPopup img:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .clients-slider {
+      gap: 16px;
+    }
+    .clients-slider img {
+      max-height: 60px;
+      padding: 10px 16px;
+    }
+  }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".clients-slider");
+  const logosHTML = slider.innerHTML;
+
+  // Duplicate logos for seamless loop
+  slider.innerHTML += logosHTML;
+
+  function initScroll() {
+    let totalWidth = 0;
+    slider.querySelectorAll("img").forEach(img => {
+      totalWidth += img.offsetWidth + parseInt(getComputedStyle(slider).gap || 0);
+    });
+
+    if (totalWidth === 0) return;
+
+    let duration = window.innerWidth < 768 ? 20 : 40;
+
+    gsap.killTweensOf(slider);
+    gsap.set(slider, { x: 0 });
+    gsap.to(slider, {
+      x: -totalWidth / 2,
+      duration: duration,
+      ease: "linear",
+      repeat: -1
+    });
+  }
+
+  function checkImagesLoaded() {
+    const images = slider.querySelectorAll("img");
+    let loadedCount = 0;
+
+    images.forEach(img => {
+      if (img.complete) {
+        loadedCount++;
+      } else {
+        img.addEventListener("load", () => {
+          loadedCount++;
+          if (loadedCount === images.length) initScroll();
+        });
+      }
+    });
+
+    if (loadedCount === images.length) initScroll();
+    setTimeout(initScroll, 1000);
+  }
+
+  window.addEventListener("resize", () => {
+    setTimeout(initScroll, 300);
+  });
+
+  checkImagesLoaded();
+
+  // Popup Logic
+  const viewAllBtn = document.getElementById("viewAllBtn");
+  const popup = document.getElementById("clientsPopup");
+  const closePopup = document.getElementById("closePopup");
+
+  viewAllBtn.addEventListener("click", () => {
+    popup.style.display = "block";
+  });
+
+  closePopup.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+});
+</script>
+
 
 
 
@@ -117,8 +503,9 @@
 <section class="company-section">
   <div class="company-container">
     <div class="company-col left gsap-fade-left">
-      <h2>Company Profile</h2>
-      <p>Introduction – Sunreen is a global solar energy solutions provider with end-to-end capabilities that drive energy savings for clients.</p>
+    <h2 style="font-size:2.5rem;">Company Profile</h2>
+
+      <p>Introduction : <br> Sunreen is a global solar energy solutions provider with end-to-end capabilities that drive energy savings for clients.</p>
       <p>We are solar system integrator providing design, installation, net energy metering, monitoring & maintenance Gallery.</p>
       <p>Integrated all types of solar PV systems i.e. residential, commercial and industrial.</p>
       <p>Our motive: cost effective projects with excellent payback.</p>
@@ -145,7 +532,7 @@
 
 <section id="impact">
   <div class="overlay">
-    <h2>HIGHLIGHTS</h2>
+
     <div class="stats">
 <!-- Include FontAwesome CDN in <head> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -193,11 +580,11 @@
   <li>Solar energy is important for many reasons, including a long project life of more than 25 years, providing reliable and consistent energy generation for decades.</li>
   <li>Reliable Technology: Solar panels are designed to work efficiently under various weather conditions and require minimal maintenance.</li>
   <li>System Warranty: Most solar systems come with a warranty of 25 years, ensuring performance and long-term reliability.</li>
-  <li>Government Support: Enjoy subsidies, tax benefits, and depreciation advantages offered by the government, reducing the upfront cost of installation.</li>
+  <li>Government Support: Enjoy subsidies, tax benefits and depreciation advantages offered by the government, reducing the upfront cost of installation.</li>
   <li>Environmental Benefits: Solar energy supports a green and clean environment by reducing carbon footprint and dependency on fossil fuels.</li>
-  <li>Cost Savings: Residential, commercial, and industrial users can significantly reduce electricity bills, sometimes up to 90%, depending on system size and consumption.</li>
+  <li>Cost Savings: Residential, commercial and industrial users can significantly reduce electricity bills, sometimes up to 90%, depending on system size and consumption.</li>
   <li>Energy Independence: Solar systems reduce dependence on the grid and provide backup during power outages.</li>
-  <li>Scalable & Flexible: Solar systems can be installed on rooftops, open lands, or industrial spaces, and can be expanded as energy needs grow.</li>
+  <li>Scalable & Flexible: Solar systems can be installed on rooftops, open lands, or industrial spaces and can be expanded as energy needs grow.</li>
 
       </ul>
     </div>
@@ -220,12 +607,12 @@
 
 
 <!-- Testimonial Section -->
-<section id="client-testimonials" style="padding:60px 20px; background:white; text-align:center;  font-family: 'Times New Roman', Times, serif;position:relative;">
+<section id="client-testimonials" style="padding:60px 20px; background:white; text-align:center;  font-family: 'Roboto', sans-serif;position:relative;">
   <div class="client-testimonial-container" style="max-width:1100px; margin:auto; position:relative;">
 
     <!-- Section Title -->
-<h2 style="font-size:32px; font-weight:700; margin-bottom:40px; color:#222; text-transform:none; letter-spacing:1px;">
-  What our clients say
+<h2 style="font-size:2.5rem; font-weight:700; margin-bottom:40px; color:#444; text-transform:none; letter-spacing:1px;">
+  What Our Clients Say
 </h2>
 
 
@@ -240,7 +627,7 @@
             Rajesh Sharma – Pune
           </h4>
           <p style="font-size:15px; color:#555; line-height:1.6;">
-            "Sunmax Solar Power installed a rooftop solar system at my residence. The process was smooth, and the team explained everything clearly. My electricity bills have reduced significantly!"
+            "Sunmax Solar Power installed a rooftop solar system at my residence. The process was smooth and the team explained everything clearly. My electricity bills have reduced significantly!"
           </p>
         </div>
 
@@ -251,7 +638,7 @@
             Sneha Patil – Industrial Client
           </h4>
           <p style="font-size:15px; color:#555; line-height:1.6;">
-            "The solar water heater supplied by Sunmax is of premium quality. Their after-sales support is excellent, and the team is always available for assistance."
+            "The solar water heater supplied by Sunmax is of premium quality. Their after-sales support is excellent and the team is always available for assistance."
           </p>
         </div>
 
@@ -262,7 +649,7 @@
             Amit Kulkarni – Commercial Building Owner
           </h4>
           <p style="font-size:15px; color:#555; line-height:1.6;">
-            "We opted for Sunmax Solar rooftop solutions for our office. The installation was seamless, and the system is working perfectly. Highly recommended for businesses!"
+            "We opted for Sunmax Solar rooftop solutions for our office. The installation was seamless and the system is working perfectly. Highly recommended for businesses!"
           </p>
         </div>
 
@@ -320,58 +707,128 @@
 
 
 
-  <!-- Footer -->
-<footer class="footer" style="position: relative; background: #111; color: #fff;">
-  <!-- Top Wave Divider -->
-<div style="position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
-  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="display:block; width:100%; height:100px;">
-    <path d="M0,100 C150,0 350,200 500,100 L500,0 L0,0 Z" style="fill:#fff;"></path>
-  </svg>
-</div>
 
-  <div class="footer-container" style="padding-top: 100px;">
+<!-- ///////////////////// WhatsApp ////////////////////// -->
+
+
+<section id="contact-buttons">
+  <!-- WhatsApp & Phone Buttons -->
+  <div style="position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 12px; z-index: 1100;">
+
+    <!-- Phone Button -->
+    <a href="tel:+917263948865" 
+       style="width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); background: #0d4a55; transition: transform 0.2s ease-in-out;">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+917263948865" target="_blank"
+       style="width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 24px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); background: #25D366; transition: transform 0.2s ease-in-out;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+  </div>
+</section>
+
+
+<footer class="footer" style="position: relative; background: #111; color: #fff; font-family: 'Poppins', sans-serif; font-size:16px;">
+  <!-- Top Wave Divider -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="display:block; width:100%; height:100px;">
+      <path d="M0,100 C150,0 350,200 500,100 L500,0 L0,0 Z" style="fill:#fff;"></path>
+    </svg>
+  </div>
+
+  <!-- Grid Layout -->
+  <div class="footer-container" style="
+        padding-top: 100px; 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+        gap: 40px;
+        align-items: flex-start;
+        text-align: left;
+        color:#fff;  /* make all text white */
+        font-size:16px; /* base font size */
+      ">
+    
     <!-- Company Info -->
     <div class="footer-col">
-      <img src="images/LOGO.jpg" alt="Sunmax Solar Power Logo" class="footer-logo" />
-      <p>Established in 2013, we are a trusted supplier of Solar Water Heaters, Solar Street Lights, and other solar solutions. Delivering quality and innovation for a sustainable future.</p>
+      <img src="images/LOGO.jpg" alt="Sunmax Solar Power Logo" style="max-width:160px; margin-bottom:15px;" />
+      <p style="line-height:1.7; font-size:16px; color:#fff;">
+        Established in 2013, we are a trusted supplier of solar water heaters, solar street lights and other solar solutions, delivering quality and innovation for a sustainable future.
+      </p>
     </div>
 
     <!-- Quick Links -->
     <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <h4 style="margin-bottom:15px; color:#fff; font-size:18px;">Quick Links</h4>
+      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
+        <li><a href="index.html" style="color:#fff; text-decoration:none; font-size:16px;">Home</a></li>
+        <li><a href="about.html" style="color:#fff; text-decoration:none; font-size:16px;">About Us</a></li>
+        <li><a href="product.html" style="color:#fff; text-decoration:none; font-size:16px;">Products</a></li>
+        <li><a href="gallery.html" style="color:#fff; text-decoration:none; font-size:16px;">Gallery</a></li>
+        <li><a href="contact.html" style="color:#fff; text-decoration:none; font-size:16px;">Contact</a></li>
       </ul>
     </div>
 
     <!-- Contact -->
     <div class="footer-col">
-      <h4>Contact Us</h4>
-      <p><span style="font-weight:700; display:inline-block; width:80px; text-transform:uppercase;">Address:</span> Plot No. 14, Suvarna Colony, Karvenagar,Pune - 411052</p>
-      <p><span style="font-weight:700; display:inline-block; width:80px; text-transform:uppercase;">Contact:</span> +91 9881056604</p>
-      <p><span style="font-weight:700; display:inline-block; width:80px; text-transform:uppercase;">Email:</span>sunmaxsolar2018@gmail.com</p>
+      <h4 style="margin-bottom:15px; color:#fff; font-size:18px;">Contact Us</h4>
+
+      <!-- Address -->
+      <p style="margin:10px 0; font-size:16px; display:flex; align-items:center; color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             fill="white" viewBox="0 0 24 24" style="margin-right:10px;">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 
+                   0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Plot No. 14, Suvarna Colony, Karvenagar, Pune - 411052
+      </p>
+
+      <!-- Phone -->
+      <p style="margin:10px 0; font-size:16px; display:flex; align-items:center; color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             fill="white" viewBox="0 0 24 24" style="margin-right:10px;">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 
+                   1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 
+                   1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 
+                   3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 
+                   1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        +91 7263948865
+      </p>
+
+      <!-- Email -->
+      <p style="margin:10px 0; font-size:16px; display:flex; align-items:center; color:#fff;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+             fill="white" viewBox="0 0 24 24" style="margin-right:10px;">
+          <path d="M20 4H4c-1.1 0-2 .9-2 
+                   2v12c0 1.1.9 2 2 
+                   2h16c1.1 0 2-.9 
+                   2-2V6c0-1.1-.9-2-2-2zm0 
+                   4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        sunmaxsolar2018@gmail.com
+      </p>
     </div>
 
     <!-- Social Links -->
     <div class="footer-col">
-      <h4>Follow Us</h4>
-      <div class="social-links">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+      <h4 style="margin-bottom:15px; color:#fff; font-size:18px;">Follow Us</h4>
+      <div style="display:flex; gap:15px;">
+        <a href="https://www.facebook.com/share/1BA3SUThJk/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" style="width:26px;"></a>
       </div>
     </div>
   </div>
 
-  <div class="footer-bottom" style="margin-top:20px; text-align:center;">
-    <p>© 2025 Sunmax Solar Power. All Rights Reserved.</p>
-    <p>Developed By DW INNOVATION PVT. LTD.</p>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom" style="margin-top:40px; text-align:center; border-top:1px solid rgba(255,255,255,0.2); padding:15px 0; font-size:15px; color:#fff;">
+    <p style="margin:5px 0;">© 2025 Sunmax Solar Power. All Rights Reserved.</p>
+    <p style="margin:5px 0;">Developed by DW Innovation Pvt. Ltd.</p>
   </div>
 </footer>
+
+
 
 
 

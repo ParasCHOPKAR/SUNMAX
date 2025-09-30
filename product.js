@@ -4,3 +4,4 @@ document.querySelectorAll('.product-category ul li.more').forEach(item => {
     alert('More products coming soon!');
   });
 });
+   

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,10 +12,26 @@ body {
   overflow-x: hidden;
 }
 /* Hero Section */
+
+/* Product Card Images */
+.product-card .product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
 .hero {
   position: relative;
   background: url('images/HERO_05.jpg') no-repeat center center/cover;
-  height: 70vh;
+  height: 70vh;   
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,11 +103,18 @@ body {
 /* Grid Container */
 .product-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
   align-items: stretch;
+  justify-content: center; /* centers the entire grid */
+  grid-auto-rows: minmax(300px, auto); /* ensures equal row heights */
+}
+
+/* Optional: force second row cards to center */
+.product-card:nth-child(n+4) {
+  justify-self: center; /* centers 2nd row cards individually */
 }
 
 /* Individual Card */
@@ -132,7 +155,6 @@ body {
   0% {opacity: 0; transform: translateY(30px);}
   100% {opacity: 1; transform: translateY(0);}
 }
-
 /* Card Heading */
 .product-card h3 {
   margin-bottom: 15px;
@@ -168,10 +190,56 @@ body {
   background: #b8323f; /* darker red on hover */
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* ------------------------- */
+/* RESPONSIVE DESIGN */
+/* ------------------------- */
+/* Large Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(3, minmax(350px, 1fr)); /* 3 wider cards per row */
+    gap: 40px; /* increased gap for spacing */
+    justify-content: center; /* keep grid centered */
+  }
+
+  .product-card {
+    min-height: 350px; /* taller cards if needed */
+  }
+
+  .product-card h3 {
+    font-size: 1.7rem; /* slightly larger heading */
+  }
+
+  .product-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Standard Desktops (992px–1199px) */
+@media (max-width: 1199px) {
+  .product-container {
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* wider cards */
+    gap: 35px;
+    justify-content: center;
+  }
+
+  .product-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .product-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets (768px–991px) */
+@media (max-width: 991px) {
   .product-section {
-    padding: 60px 15px;
+    padding: 60px 20px;
+  }
+
+  .product-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 25px;
   }
 
   .product-card {
@@ -186,15 +254,41 @@ body {
   .product-card p {
     font-size: 0.9rem;
   }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .product-section {
+    padding: 50px 15px;
+  }
 
   .product-container {
+    grid-template-columns: 1fr; /* 1 card per row */
     gap: 20px;
+  }
+
+  .product-card {
+    padding: 18px;
+  }
+
+  .product-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-card .btn {
+    font-size: 0.9rem;
+    padding: 9px 18px;
   }
 }
 
+/* Small Mobile (≤480px) */
 @media (max-width: 480px) {
   .product-section {
-    padding: 40px 10px;
+    padding: 40px 12px;
   }
 
   .product-card {
@@ -202,10 +296,33 @@ body {
   }
 
   .product-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .product-card p {
     font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .product-card .btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
   }
 }
+
+/* Extra Small Mobile (≤360px) */
+@media (max-width: 360px) {
+  .product-card h3 {
+    font-size: 1rem;
+  }
+
+  .product-card p {
+    font-size: 0.8rem;
+  }
+
+  .product-card .btn {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+}
+

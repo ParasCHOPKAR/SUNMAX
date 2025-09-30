@@ -3,14 +3,14 @@
   padding: 100px 20px;
   margin-top: 0px;
   background: linear-gradient(#fff);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 #celebration-events h2 {
   font-size: 3rem;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Roboto', sans-serif;
   color: black;
   margin-bottom: 20px;
   display: inline-block;
@@ -68,7 +68,7 @@
   left: 0;
   width: 100%;
   padding: 10px 15px;
-  background: rgba(0, 122, 204, 0.7);
+  background: #800020;
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
