@@ -8,10 +8,10 @@
 }
 
 #celebration-events h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color:#444;
   margin-bottom: 20px;
   display: inline-block;
   position: relative;

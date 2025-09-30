@@ -40,14 +40,22 @@
 <!-- Contact Form Section -->
 <section id="contactSection">
   <div class="contact-container">
-    <!-- Left Contact Info -->
-    <div class="contact-info">
-      <h2>Contact Us</h2>
-      <p><i class="fas fa-map-marker-alt"></i> Plot No. 14, Suvarna Colony, Karvenagar,<br>Pune - 411052</p>
-      <p><i class="fas fa-envelope"></i> sunmaxsolar2018@gmail.com</p>
-      <p><i class="fas fa-phone"></i> +91 7263948865</p>
 
-    </div>
+    <!-- Left Contact Info -->
+<div class="contact-info">
+  <h2>Contact Us</h2>
+  <p><i class="fas fa-map-marker-alt"></i> Plot No. 14, Suvarna Colony, Karvenagar,<br>Pune - 411052</p>
+  <p><i class="fas fa-envelope"></i> sunmaxsolar2018@gmail.com</p>
+  <p><i class="fas fa-phone"></i> +91 7263948865</p>
+
+  <!-- Social Media -->
+  <div class="social-links">
+    <a href="https://www.facebook.com/sunmaxsolar2018?rdid=QEKhiiOfIrenj66x&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BA3SUThJk%2F#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <!-- <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
+<a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> 
+    <!-- <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+  </div>
+</div>
 
     <!-- Right Form with Background Image -->
     <div class="contact-form">
@@ -55,18 +63,26 @@
       <div class="form-overlay">
         <h2>Get in Touch</h2>
         <p>Feel free to drop us a line below!</p>
+
+        <!-- Contact Form -->
         <form id="contactForm">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <!-- Added Subject Field -->
-          <input type="text" placeholder="Subject" required>
-          <textarea placeholder="Type your message here..." required></textarea>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          
+          <!-- Subject Field (auto-filled from URL) -->
+          <input type="text" id="subject" placeholder="Subject" required>
+          
+          <textarea id="message" placeholder="Type your message here..." required></textarea>
+          
+          <div id="formMsg" style="margin-bottom:10px; font-size:14px;"></div>
+
           <button type="submit">SEND</button>
         </form>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
