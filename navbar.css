@@ -7,12 +7,7 @@ body {
 
 /* Header */
 header {
-/* background: linear-gradient(90deg, #e63946, #ff9f1c, #000); */
-background: linear-gradient(90deg, #e63946, #800020, #800020, #000);
-
-
-
-
+  background: linear-gradient(90deg, #003366, #0077b6, #ffb703, #fb8500);
   color: white;
   position: sticky;
   top: 0;
@@ -30,7 +25,7 @@ background: linear-gradient(90deg, #e63946, #800020, #800020, #000);
 
 /* Logo */
 .logo img {
-  height: 55px;
+  height: 80px;
   transition: transform 0.3s;
 }
 .logo img:hover {
@@ -62,7 +57,7 @@ background: linear-gradient(90deg, #e63946, #800020, #800020, #000);
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #e63946;
+  background: #ffb703;
   transition: width 0.3s;
 }
 .nav-links li a:hover::after {
@@ -71,6 +66,7 @@ background: linear-gradient(90deg, #e63946, #800020, #800020, #000);
 .nav-links li a:hover {
   transform: translateY(-2px);
 }
+
 /* Dropdown - Desktop */
 .nav-links .dropdown-content {
   display: block;
@@ -79,19 +75,16 @@ background: linear-gradient(90deg, #e63946, #800020, #800020, #000);
   left: 0;
   min-width: 240px;
   padding: 8px 0;
-background:#111;
-  backdrop-filter: blur(12px) saturate(140%);
+  background: #0a3d62;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(230, 57, 70, 0.4);
-  
-  /* Hidden by default */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35),
+              0 0 20px rgba(255, 183, 3, 0.4);
   opacity: 0;
   transform: translateY(15px) scale(0.92);
   pointer-events: none;
   transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .nav-links .dropdown:hover .dropdown-content {
   opacity: 1;
   transform: translateY(0) scale(1);
@@ -107,18 +100,15 @@ background:#111;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
   text-decoration: none;
-  position: relative;
   transition: all 0.3s ease;
 }
-
-/* Hover effects */
 .nav-links .dropdown-content a:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffddcc;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffb703;
   transform: translateX(8px);
 }
 
-/* Animated underline effect */
+/* Underline animation */
 .nav-links .dropdown-content a::after {
   content: "";
   position: absolute;
@@ -126,32 +116,30 @@ background:#111;
   bottom: 8px;
   width: 0;
   height: 2px;
-  background: #ffddcc;
+  background: #ffb703;
   transition: width 0.3s ease;
 }
 .nav-links .dropdown-content a:hover::after {
   width: calc(100% - 40px);
 }
-/* ------------------------- */
-/* Sidebar - Mobile (Enhanced) */
-/* ------------------------- */
+
+/* Sidebar - Mobile */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -300px; /* slightly wider for comfort */
+  left: -300px;
   width: 300px;
   height: 100%;
-  background: linear-gradient(180deg, #111, #1a1a1a);
+  background: linear-gradient(180deg, #003366, #006d77, #009e60);
   color: white;
   transition: left 0.4s ease, box-shadow 0.4s ease;
   padding-top: 70px;
   box-shadow: 5px 0 30px rgba(0, 0, 0, 0.7);
   z-index: 999;
   border-right: 1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(5px); /* subtle glass effect */
+  backdrop-filter: blur(5px);
   overflow-y: auto;
 }
-
 .sidebar.open {
   left: 0;
 }
@@ -166,51 +154,30 @@ background:#111;
   position: relative;
   transition: all 0.3s ease;
   border-radius: 8px;
-  margin: 5px 15px;
+  margin: 20px 15px;
 }
-
 .sidebar a:hover {
-  background: #e63946;
+  background: #ffb703;
+  color: #002244;
   transform: translateX(10px) scale(1.03);
-  box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 183, 3, 0.4);
 }
 
-/* Sidebar dropdown */
+/* Dropdown in Sidebar */
 .sidebar .dropdown-content {
   position: static;
-  background: #b71c1c;
+  background: #0a3d62;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
   border-radius: 0 0 8px 8px;
 }
-
 .sidebar .dropdown.active .dropdown-content {
-  max-height: 500px; /* expands smoothly */
+  max-height: 500px;
   padding: 10px 0;
 }
 
-.sidebar .dropdown > a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-
-/* Arrow animation */
-.arrow {
-  display: inline-block;
-  margin-left: 10px;
-  transition: transform 0.3s ease;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.sidebar .dropdown.active .arrow {
-  transform: rotate(90deg);
-}
-
-/* Burger menu - animated */
+/* Burger Menu */
 .burger {
   display: none;
   flex-direction: column;
@@ -221,7 +188,6 @@ background:#111;
   padding: 10px;
   transition: all 0.3s ease;
 }
-
 .burger div {
   width: 30px;
   height: 4px;
@@ -229,8 +195,6 @@ background:#111;
   border-radius: 2px;
   transition: all 0.4s ease;
 }
-
-/* Burger open animation */
 .burger.open div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
