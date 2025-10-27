@@ -44,7 +44,7 @@ body {
 }
 
 .btn {
-  background: #b71c1c;
+  background: #0a3d62;
   color: #fff;
   padding: 12px 25px;
   border-radius: 30px;
@@ -173,12 +173,12 @@ body {
 .highlight-text {
   font-weight: 600;
   font-size: 17px;
-  color: #b30000;
+  color: #0a3d62;
 }
 
 /* Button */
 .about-btn {
-  background: #e60000;
+  background: #0a3d62;
   color: #fff;
   border: none;
   padding: 14px 26px;
@@ -189,7 +189,7 @@ body {
 }
 
 .about-btn:hover {
-  background: #cc0000;
+  background:#0a3d62;
 }
 
 .about-btn-link {
@@ -223,7 +223,7 @@ body {
 .about-box h3 {
   margin: 0;
   font-size: 28px;
-  color: #cc0000;
+  color:#0a3d62;
 }
 
 .box-title {
@@ -352,7 +352,8 @@ body {
 
 /* ===== COMPANY SECTION ===== */
 .company-section {
-  background: linear-gradient(to right, #4b1f1f 60%, #f7f7f7 40%);
+background: linear-gradient(to right, #0a3d62 60%, #f7f7f7 40%);
+
   padding: 50px 20px;
 }
 
@@ -369,7 +370,7 @@ body {
 }
 
 .company-col.left {
-  background: #4b1f1f;
+  background:  #0a3d62;
 }
 
 .company-col.right {
@@ -393,59 +394,81 @@ body {
 }
 
 .info-box h3 {
-  color: #b22222;
+  color: #0a3d62;
   margin-bottom: 10px;
   
 }
 
 /* ===== WHY SOLAR SECTION ===== */
+/* ===== WHY SOLAR SYSTEM SECTION ===== */
 .why-section {
+  padding: 100px 20px;
   background: #fff;
-  padding: 60px 20px;
+  font-family: "Raleway", sans-serif;
+  color: #444; /* Set default text color */
 }
 
 .why-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
   max-width: 1200px;
   margin: auto;
-  gap: 30px;
 }
 
 .why-col {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 45%;
+  color: #444; /* Apply text color */
 }
 
 .why-col h3 {
-  font-size: 1.6rem;
-  color: #b22222;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #444;
+  font-weight: 700;
+  position: relative;
 }
 
 .why-col ul {
-  list-style: disc inside;
-  color: #333;
+  list-style-type: disc;
+  padding-left: 25px;
+  line-height: 1.7;
+}
+
+.why-col ul li {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 1rem;
 }
 
 .why-col img {
   width: 100%;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  max-width: 480px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
-@media (max-width: 768px) {
-  .company-container, .why-container {
-    flex-direction: column;
-  }
+.info-box {
+  background: #f8f8f8;
+  padding: 25px 30px;
+  border-radius: 10px;
+  color: #444;
+}
 
-  .company-section {
-    background: #4b1f1f;
-  }
+.info-box h3 {
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
 
-  .company-col.right {
-    background: #fff;
-  }
+.info-box p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
 }
 
 /* //////////// END/////////////////// */
@@ -535,7 +558,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #e63946, #ff6b6b);
+  background: linear-gradient(90deg, #0a3d62, #ff6b6b);
   transition: width 0.3s ease;
 }
 
@@ -569,7 +592,7 @@ body {
 }
 
 .social-links a:hover {
-  background: linear-gradient(135deg, #e63946, #ff6b6b);
+  background: linear-gradient(135deg, #0a3d62, #ff6b6b);
   transform: translateY(-5px) scale(1.15);
   box-shadow: 0 8px 20px rgba(230, 57, 70, 0.5);
 }
@@ -597,7 +620,7 @@ body {
 }
 
 .footer-bottom span {
-  color: #e63946;
+  color: #0a3d62;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -748,7 +771,7 @@ body {
 }
 
 .icon {
-  background:  #b22222;
+  background:  #0a3d62;
   color: #fff;
   font-size: 2rem;
   width: 80px;

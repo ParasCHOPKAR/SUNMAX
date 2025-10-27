@@ -23,7 +23,7 @@ body {
 
 /* Left Content */
 .yojana-left .yojana-tagline {
-  color: #b71c1c;
+  color: #0a3d62;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 12px;
@@ -39,7 +39,7 @@ body {
 }
 
 .yojana-title-main { color: #222; }
-.yojana-title-highlight { color: #b71c1c; }
+.yojana-title-highlight { color: #0a3d62; }
 
 .yojana-left .yojana-description {
   color: #555;
@@ -87,7 +87,7 @@ body {
 
 /* Right Content */
 .yojana-right {
-  background: linear-gradient(135deg,#b71c1c,#7f0000);
+  background: linear-gradient(135deg,#0a3d62,#7f0000);
   color: #fff;
   padding: 20px; 
   border-radius: 12px;
@@ -137,10 +137,10 @@ body {
 }
 
 .scheme-highlights { background: #fff; }
-.ss-power-contribution { background: linear-gradient(135deg,#b71c1c,#7f0000); color: #fff; box-shadow:0 6px 18px rgba(0,0,0,0.18); }
+.ss-power-contribution { background: linear-gradient(135deg,#0a3d62,#7f0000); color: #fff; box-shadow:0 6px 18px rgba(0,0,0,0.18); }
 
 .scheme-highlights h3,
-.ss-power-contribution h3 { font-size: 1.6rem; margin-bottom: 12px; color: #b71c1c; }
+.ss-power-contribution h3 { font-size: 1.6rem; margin-bottom: 12px; color: #0a3d62; }
 
 
 .scheme-highlights ul,
@@ -174,7 +174,7 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
-.benefit-card h4 { color: #b71c1c; margin-bottom: 8px; font-size: 1.1rem; }
+.benefit-card h4 { color: #0a3d62; margin-bottom: 8px; font-size: 1.1rem; }
 .benefit-card p { color: #555; font-size: 0.9rem; line-height:1.5; }
 
 /* Responsive Media Queries */

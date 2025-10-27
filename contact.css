@@ -115,7 +115,8 @@ body {
 
 /* Left Contact Info */
 #contactSection .contact-info {
-  background: linear-gradient(135deg, #b71c1c, #8b1010);
+ background: linear-gradient(135deg, #0a3d62, #f7b500);
+
   color: #fff;
   padding: 50px 40px;
   width: 40%;
@@ -172,7 +173,7 @@ body {
 
 .contact-info .social-links a:hover {
   background: #fff;
-  color: #b71c1c;
+  color: #0a3d62;
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -222,13 +223,13 @@ body {
 
 #contactSection .form-overlay input:focus,
 #contactSection .form-overlay textarea:focus {
-  border-color: #b71c1c;
+  border-color: #0a3d62;
   box-shadow: 0 0 8px rgba(183,28,28,0.2);
 }
 
 /* Button */
 #contactSection .form-overlay button {
-  background: #b71c1c;
+  background: #0a3d62;
   border: none;
   color: #fff;
   padding: 14px 40px;

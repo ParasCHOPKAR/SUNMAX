@@ -120,7 +120,7 @@ body {
 /* Individual Card */
 .product-card {
   background: #fff; /* white background */
-  border: 2px solid #e63946; /* red border for accent */
+  border: 2px solid #0a3d62; /* red border for accent */
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -159,7 +159,7 @@ body {
 .product-card h3 {
   margin-bottom: 15px;
   font-size: 1.5rem;
-  color: #e63946; /* red heading */
+  color: #0a3d62; /* red heading */
 }
 
 /* Card Description */
@@ -174,7 +174,7 @@ body {
 .product-card .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #e63946; /* red button */
+  background: #0a3d62; /* red button */
   color: #fff; /* white text */
   font-size: 0.95rem;
   font-weight: 500;
