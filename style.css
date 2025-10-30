@@ -349,11 +349,9 @@ body {
 }
 
 
-
 /* ===== COMPANY SECTION ===== */
 .company-section {
-background: linear-gradient(to right, #0a3d62 60%, #f7f7f7 40%);
-
+  background: linear-gradient(to right, #0a3d62 60%, #f7f7f7 40%);
   padding: 50px 20px;
 }
 
@@ -370,7 +368,7 @@ background: linear-gradient(to right, #0a3d62 60%, #f7f7f7 40%);
 }
 
 .company-col.left {
-  background:  #0a3d62;
+  background: #0a3d62;
 }
 
 .company-col.right {
@@ -390,13 +388,80 @@ background: linear-gradient(to right, #0a3d62 60%, #f7f7f7 40%);
   background: #fff3cd;
   padding: 20px;
   border-left: 5px solid #e67e22;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .info-box h3 {
   color: #0a3d62;
   margin-bottom: 10px;
-  
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .company-section {
+    padding: 40px 15px;
+  }
+
+  .highlight-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-section {
+    background: #0a3d62; /* Simplify background on small screens for better readability */
+    padding: 40px 10px;
+  }
+
+  .company-col.left,
+  .company-col.right {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .company-col.right {
+    background: #f7f7f7;
+    color: #333;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  .highlight-text {
+    font-size: 1.1rem;
+  }
+
+  .info-box {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-section {
+    padding: 30px 8px;
+  }
+
+  .highlight-text {
+    font-size: 1rem;
+  }
+
+  .info-box {
+    padding: 12px;
+  }
+
+  .info-box h3 {
+    font-size: 1rem;
+  }
+
+  .company-col {
+    padding: 15px;
+  }
 }
 
 /* ===== WHY SOLAR SECTION ===== */
