@@ -502,10 +502,7 @@ body {
 
 
     /* ////////////////////////////// WHY CHOSE US ///////////////// */
-
- 
-
-    .why-choose {
+.why-choose {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -527,7 +524,6 @@ body {
   margin-bottom: 20px;
   line-height: 1.7;
 }
-
 
 .why-left .btn:hover {
   background: #d62828;
@@ -581,23 +577,43 @@ body {
   margin: 0;
 }
 
+/* ---------- MOBILE VIEW (≤900px) ---------- */
 @media (max-width: 900px) {
   .why-choose {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 60px 8%;
   }
+
   .why-left,
   .why-right {
     align-items: center;
   }
+
   .why-left img {
     margin-top: 30px;
+    border-radius: 20px;
   }
+
+  /* ✅ Reduce right-side content size */
+  .why-right h2 {
+    font-size: 15px;        /* smaller heading */
+    margin-bottom: 25px;
+  }
+
+  .why-item .icon {
+    font-size: 18px;        /* smaller icons */
+    padding: 10px 15px;
+    margin: 0 10px 0 0;
+  }
+
+  .why-item p {
+    font-size: 17px;        /* smaller text */
+    line-height: 1.5;
+  }
+
   .why-item {
     justify-content: flex-start;
     text-align: left;
-  }
-  .why-item .icon {
-    margin: 0 15px 0 0;
   }
 }

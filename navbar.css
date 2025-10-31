@@ -126,20 +126,37 @@ header {
 /* Sidebar - Mobile */
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 0; /* ✅ Removes the top gap */
   left: -300px;
   width: 300px;
   height: 100%;
   background: linear-gradient(180deg, #003366, #006d77, #009e60);
   color: white;
   transition: left 0.4s ease, box-shadow 0.4s ease;
-  padding-top: 70px;
+  padding-top: 80px; /* ✅ Keeps ✖ and menu items below navbar height */
   box-shadow: 5px 0 30px rgba(0, 0, 0, 0.7);
-  z-index: 999;
+  z-index: 9999; /* ✅ Ensures it stays above all elements */
   border-right: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(5px);
   overflow-y: auto;
 }
+
+/* Close Button */
+.sidebar a.close-btn {
+  position: absolute;
+  top: 25px; /* ✅ Push a little below top edge */
+  right: 25px; /* ✅ Slightly inward */
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.sidebar a.close-btn:hover {
+  color: #ffcc00;
+}
+
+
 .sidebar.open {
   left: 0;
 }
